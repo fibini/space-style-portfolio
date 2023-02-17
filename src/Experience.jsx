@@ -1,23 +1,31 @@
-import { TransformControls, OrbitControls } from "@react-three/drei";
+import { MeshReflectorMaterial, TransformControls, OrbitControls } from "@react-three/drei";
 import Homepage from "./Homepage";
 
 export default function Experience()
 {
     return <>
-        <OrbitControls />
-        <Homepage />
+        <OrbitControls makeDefault />
+        <directionalLight />
+        <ambientLight intensity={1} />
 
         {/* <TransformControls>
             <mesh scale={ 1.5 }>
                 <boxGeometry />
-                <meshBasicMaterial color={ "blue" } />
+                <meshBasicMaterial color={ "green" } />
             </mesh>
         </TransformControls> */}
 
-        <mesh position-y={ -5 } rotation-x={ -Math.PI * 0.5 } scale={50}>
+        <mesh position-y={ -5 } rotation-x={ - Math.PI * 0.5 } scale={ 200 }>
             <planeGeometry />
-            <meshStandardMaterial color="black" />
+            <MeshReflectorMaterial 
+                resolution={512}
+                mirror={ 0.5 }
+                mixBlur={1}
+                color={'grey'} 
+            />
         </mesh>
+
+        <Homepage />
         
     </>
 }
