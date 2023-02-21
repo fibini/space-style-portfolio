@@ -1,8 +1,16 @@
-import {useCursor, Float, Text } from "@react-three/drei"
-import { useState } from "react"
+import { useCursor, Float, Text } from "@react-three/drei"
+import { useRef, useState } from "react"
+import { useThree } from "@react-three/fiber"
 
 export default function Homepage()
 {
+    const projects = useRef()
+    const { camera } = useThree()
+    const switchToProjects = () =>
+    {
+        camera.position.set(40, 0, 40)
+    }
+
     const [hovered, set] = useState()
     useCursor(hovered)
     return <>
@@ -24,6 +32,7 @@ export default function Homepage()
                 rotation-y={0.75}
                 onPointerOver={() =>set(true)}
                 onPointerOut={() => set(false)}
+                onClick={() =>{}}
             >
                 ABOUT
             </Text>
@@ -37,10 +46,12 @@ export default function Homepage()
                 CONTACT
             </Text>
             <Text
+                ref={projects}
                 position={[0, -4, 0]} 
                 color="blue" 
                 onPointerOver={() =>set(true)}
                 onPointerOut={() => set(false)}
+                onClick ={() =>{switchToProjects()}}
              >
                 PROJECTS
             </Text>

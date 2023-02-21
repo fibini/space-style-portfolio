@@ -15,7 +15,7 @@ export default function Experience()
             </mesh>
         </TransformControls> */}
 
-        <mesh position-y={ -5 } rotation-x={ - Math.PI * 0.5 } scale={ 200 }>
+        <mesh position={[0, -5, 90 ] } rotation-x={ - Math.PI * 0.5 } scale={ 200 }>
             <planeGeometry />
             <MeshReflectorMaterial 
                 resolution={512}
