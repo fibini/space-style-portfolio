@@ -11,6 +11,11 @@ export default function Homepage()
         camera.position.set(40, 0, 40)
     }
 
+    const switchToAbout = () =>
+    {
+        camera.position.set(-60, 0, 50)
+    }
+
     const [hovered, set] = useState()
     useCursor(hovered)
     return <>
@@ -32,7 +37,7 @@ export default function Homepage()
                 rotation-y={0.75}
                 onPointerOver={() =>set(true)}
                 onPointerOut={() => set(false)}
-                onClick={() =>{}}
+                onClick={() =>{switchToAbout()}}
             >
                 ABOUT
             </Text>
