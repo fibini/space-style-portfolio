@@ -1,5 +1,6 @@
 import { MeshReflectorMaterial, TransformControls, OrbitControls } from "@react-three/drei";
 import Homepage from "./Homepage";
+import About from "./About";
 
 export default function Experience()
 {
@@ -26,6 +27,7 @@ export default function Experience()
         </mesh>
 
         <Homepage />
+        <About />
         
     </>
 }
