@@ -26,7 +26,7 @@ export default function Experience()
             />
         </mesh>
 
-        <Homepage />
+        {/* <Homepage /> */}
         <About />
         
     </>
