@@ -15,10 +15,10 @@ canvas
     touch-action: none;
 }
 
-.laptop iframe
+.laptop img
 {
-    width: 1200px;
-    height: 800px;
+    width: 1024px;
+    height: 670px;
     border: none;
     border-radius: 20px;
     background: #000000;
