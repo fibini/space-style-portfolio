@@ -1,3 +1,5 @@
+html,
+body,
 #root
 {
     position: fixed;
@@ -6,4 +8,18 @@
     width: 100%;
     height: 100%;
     background: ivory;
+}
+
+canvas
+{
+    touch-action: none;
+}
+
+.laptop iframe
+{
+    width: 1200px;
+    height: 800px;
+    border: none;
+    border-radius: 20px;
+    background: #000000;
 }
