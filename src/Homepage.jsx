@@ -35,7 +35,7 @@ export default function Homepage()
         {/* heading */}
         <Float>
             <Text3D
-                position={[-3, 1.5, -2]}
+                position={[-2, 1.5, -2]}
                 material={homeMaterial}
                 font="./fonts/helvetiker_regular.typeface.json"
                 size={1}
@@ -49,41 +49,70 @@ export default function Homepage()
             >
                    MY
                 </Text3D>
-            <Text fontSize={2} position={[5, 2, 2.5]} color="blue" rotation-y={-0.75}>
+            <Text3D
+                position={[1, 1.5, -2]}
+                material={homeMaterial}
+                font="./fonts/helvetiker_regular.typeface.json"
+                size={1}
+                height={ 0.2}
+                curveSegments={ 12 }
+                bevelEnabled
+                bevelThickness={ 0.1 }
+                bevelSize={ 0.02 }
+                bevelOffset={ 0 }
+                bevelSegments={ 5 }
+            >
                 PORTFOLIO
-            </Text>
+            </Text3D>
         </Float>
 
         {/* navigation */}
         <Float>
-            <Text
-                position={[-2, -1, 0]}
-                color="blue"
-                rotation-y={0.75}
-                onPointerOver={() =>set(true)}
-                onPointerOut={() => set(false)}
-                onClick={() =>{switchToAbout()}}
+        <Text3D
+                position={[-3, -1, -2]}
+                material={homeMaterial}
+                font="./fonts/helvetiker_regular.typeface.json"
+                size={1}
+                height={ 0.2}
+                curveSegments={ 12 }
+                bevelEnabled
+                bevelThickness={ 0.1 }
+                bevelSize={ 0.02 }
+                bevelOffset={ 0 }
+                bevelSegments={ 5 }
             >
                 ABOUT
-            </Text>
-            <Text
-                position={[2, -1, 0]}
-                color="blue" 
-                rotation-y={-0.75}
-                onPointerOver={() =>set(true)}
-                onPointerOut={() => set(false)}
+            </Text3D>
+            <Text3D
+                position={[-3, -4, -2]}
+                material={homeMaterial}
+                font="./fonts/helvetiker_regular.typeface.json"
+                size={1}
+                height={ 0.2}
+                curveSegments={ 12 }
+                bevelEnabled
+                bevelThickness={ 0.1 }
+                bevelSize={ 0.02 }
+                bevelOffset={ 0 }
+                bevelSegments={ 5 }
             >
                 CONTACT
-            </Text>
-            <Text
-                position={[0, -4, 0]} 
-                color="blue" 
-                onPointerOver={() =>set(true)}
-                onPointerOut={() => set(false)}
-                onClick ={() =>{switchToProjects()}}
-             >
+            </Text3D>
+            <Text3D
+                position={[2.5, -2.5, -2]}
+                material={homeMaterial}
+                font="./fonts/helvetiker_regular.typeface.json"
+                size={1}
+                height={ 0.2}
+                curveSegments={ 12 }
+                bevelEnabled
+                bevelThickness={ 0.1 }
+                bevelSize={ 0.02 }
+                bevelOffset={ 0 }
+                bevelSegments={ 5 }
+            >
                 PROJECTS
-            </Text>
+            </Text3D>
         </Float>
     </>
 }
