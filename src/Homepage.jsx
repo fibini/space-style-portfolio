@@ -7,7 +7,7 @@ const homeMaterial = new THREE.MeshMatcapMaterial()
 
 export default function Homepage()
 {
-    const [matcapTexture] = useMatcapTexture('3E2335_D36A1B_8E4A2E_2842A5', 256)
+    const [matcapTexture] = useMatcapTexture('1A2461_3D70DB_2C3C8F_2C6CAC', 256)
 
     useEffect(() =>
     {
@@ -25,7 +25,7 @@ export default function Homepage()
 
     const switchToAbout = () =>
     {
-        camera.position.set(-20, 0, 45)
+        camera.position.set(0, 0, 80)
     }
 
     const [hovered, set] = useState()
@@ -80,6 +80,9 @@ export default function Homepage()
                 bevelSize={ 0.02 }
                 bevelOffset={ 0 }
                 bevelSegments={ 5 }
+                onClick={switchToAbout}
+                onPointerOver={() => set(true)} 
+                onPointerOut={() => set(false)}
             >
                 ABOUT
             </Text3D>
