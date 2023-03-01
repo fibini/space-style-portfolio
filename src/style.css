@@ -23,3 +23,9 @@ canvas
     border-radius: 20px;
     background: #000000;
 }
+
+.portalImg img
+{
+    width: 1200px;
+    height: 600px;
+}

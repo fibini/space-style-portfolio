@@ -37,8 +37,13 @@ export default function Projects()
                 </Text3D>
 
                 <primitive object={ phone.scene } scale={2} position={[0, -4, 0]} rotation={[-1, 0.25, 0.25]}>
-                    <Html>
-                        
+                    <Html
+                    transform
+                    wrapperClass="portalImg"
+                    distanceFactor={0.5}
+                    position={[0.166, 2.45, 0.08]}
+                    >
+                        <a href='https://portal-scene-eta.vercel.app/'><img src="./portalimg.png" /></a>
                     </Html>
                 </primitive> 
             </Float>
