@@ -45,6 +45,14 @@ export default function Projects()
                     >
                         <a href='https://portal-scene-eta.vercel.app/'><img src="./portalimg.png" /></a>
                     </Html>
+                    <Html
+                    transform
+                    wrapperClass="threeDText"
+                    distanceFactor={0.5}
+                    position={[0.166, 1.7, 0.08]}
+                    >
+                        <a href='https://3d-text-six-black.vercel.app/'><img src="./3Dname.png" /></a>
+                    </Html>
                 </primitive> 
             </Float>
     </>
