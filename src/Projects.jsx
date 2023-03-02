@@ -53,6 +53,22 @@ export default function Projects()
                     >
                         <a href='https://3d-text-six-black.vercel.app/'><img src="./3Dname.png" /></a>
                     </Html>
+                    <Html
+                    transform
+                    wrapperClass="spotitfy"
+                    distanceFactor={0.5}
+                    position={[0.166, .95, 0.08]}
+                    >
+                        <a href='https://daf98.github.io/Spotify-API/dist/'><img src="./spotitfy.png" /></a>
+                    </Html>
+                    <Html
+                    transform
+                    wrapperClass="gamingConvention"
+                    distanceFactor={0.5}
+                    position={[0.166, 0.2, 0.08]}
+                    >
+                        <a href='https://fibini.github.io/Gaming_Convention/index.html'><img src="./gamingConvention.png" /></a>
+                    </Html>
                 </primitive> 
             </Float>
     </>
