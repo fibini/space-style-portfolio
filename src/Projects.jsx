@@ -1,4 +1,4 @@
-import { useGLTF, Text3D, useMatcapTexture, Float, Html } from "@react-three/drei"
+import { useGLTF, Text3D, useMatcapTexture, Float, Html, Environment } from "@react-three/drei"
 import { useEffect } from "react"
 import * as THREE from 'three'
 
@@ -17,21 +17,26 @@ export default function Projects()
         projectsMaterial.needsUpdate = true
     }, [])
    
-    return <>  
-        <ambientLight />
-        <Float>
-            <Text3D
-                    position={[-3, 1.5, 0]}
-                    material={projectsMaterial}
-                    font="./fonts/helvetiker_regular.typeface.json"
-                    size={1}
-                    height={ 0.2}
-                    curveSegments={ 12 }
-                    bevelEnabled
-                    bevelThickness={ 0.1 }
-                    bevelSize={ 0.02 }
-                    bevelOffset={ 0 }
-                    bevelSegments={ 5 }
+    return <> 
+        {/* <Environment
+            background
+            preset="warehouse"
+         />  */}
+        {/* <ambientLight /> */}
+        <group position={[0, -8, 0]}>
+            <Float>
+                <Text3D
+                        position={[-3, 1.5, 0]}
+                        material={projectsMaterial}
+                        font="./fonts/helvetiker_regular.typeface.json"
+                        size={1}
+                        height={ 0.2}
+                        curveSegments={ 12 }
+                        bevelEnabled
+                        bevelThickness={ 0.1 }
+                        bevelSize={ 0.02 }
+                        bevelOffset={ 0 }
+                        bevelSegments={ 5 }
                 >
                     PROJECTS
                 </Text3D>
@@ -71,5 +76,6 @@ export default function Projects()
                     </Html>
                 </primitive> 
             </Float>
+        </group>
     </>
 }

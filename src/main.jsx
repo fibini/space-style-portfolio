@@ -16,6 +16,7 @@ root.render(
                 position: [ 0, 2, 8 ]
             } }
         >
+            <ambientLight />
             <Experience />
         </Canvas>
     </StrictMode>
