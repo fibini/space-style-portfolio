@@ -25,7 +25,7 @@ export default function Homepage()
 
     const switchToAbout = () =>
     {
-        camera.position.set(0, 0, 80)
+        camera.position.set(0, -9, 8)
     }
 
     const [hovered, set] = useState()
@@ -33,89 +33,91 @@ export default function Homepage()
 
     return <>
         {/* heading */}
-        <Float>
-            <Text3D
-                position={[-2, 1.5, -2]}
-                material={homeMaterial}
-                font="./fonts/helvetiker_regular.typeface.json"
-                size={1}
-                height={ 0.2}
-                curveSegments={ 12 }
-                bevelEnabled
-                bevelThickness={ 0.1 }
-                bevelSize={ 0.02 }
-                bevelOffset={ 0 }
-                bevelSegments={ 5 }
-            >
-                   MY
+        <group position={[-2, 1, 0]}>
+            <Float>
+                <Text3D
+                    position={[-2, 1.5, -2]}
+                    material={homeMaterial}
+                    font="./fonts/helvetiker_regular.typeface.json"
+                    size={1}
+                    height={ 0.2}
+                    curveSegments={ 12 }
+                    bevelEnabled
+                    bevelThickness={ 0.1 }
+                    bevelSize={ 0.02 }
+                    bevelOffset={ 0 }
+                    bevelSegments={ 5 }
+                >
+                    MY
+                    </Text3D>
+                <Text3D
+                    position={[1, 1.5, -2]}
+                    material={homeMaterial}
+                    font="./fonts/helvetiker_regular.typeface.json"
+                    size={1}
+                    height={ 0.2}
+                    curveSegments={ 12 }
+                    bevelEnabled
+                    bevelThickness={ 0.1 }
+                    bevelSize={ 0.02 }
+                    bevelOffset={ 0 }
+                    bevelSegments={ 5 }
+                >
+                    PORTFOLIO
                 </Text3D>
-            <Text3D
-                position={[1, 1.5, -2]}
-                material={homeMaterial}
-                font="./fonts/helvetiker_regular.typeface.json"
-                size={1}
-                height={ 0.2}
-                curveSegments={ 12 }
-                bevelEnabled
-                bevelThickness={ 0.1 }
-                bevelSize={ 0.02 }
-                bevelOffset={ 0 }
-                bevelSegments={ 5 }
-            >
-                PORTFOLIO
-            </Text3D>
-        </Float>
+            </Float>
 
-        {/* navigation */}
-        <Float>
-        <Text3D
-                position={[-3, -1, -2]}
-                material={homeMaterial}
-                font="./fonts/helvetiker_regular.typeface.json"
-                size={1}
-                height={ 0.2}
-                curveSegments={ 12 }
-                bevelEnabled
-                bevelThickness={ 0.1 }
-                bevelSize={ 0.02 }
-                bevelOffset={ 0 }
-                bevelSegments={ 5 }
-                onClick={switchToAbout}
-                onPointerOver={() => set(true)} 
-                onPointerOut={() => set(false)}
-            >
-                ABOUT
-            </Text3D>
+            {/* navigation */}
+            {/* <Float>
             <Text3D
-                position={[-3, -4, -2]}
-                material={homeMaterial}
-                font="./fonts/helvetiker_regular.typeface.json"
-                size={1}
-                height={ 0.2}
-                curveSegments={ 12 }
-                bevelEnabled
-                bevelThickness={ 0.1 }
-                bevelSize={ 0.02 }
-                bevelOffset={ 0 }
-                bevelSegments={ 5 }
-            >
-                CONTACT
-            </Text3D>
-            <Text3D
-                position={[2.5, -2.5, -2]}
-                material={homeMaterial}
-                font="./fonts/helvetiker_regular.typeface.json"
-                size={1}
-                height={ 0.2}
-                curveSegments={ 12 }
-                bevelEnabled
-                bevelThickness={ 0.1 }
-                bevelSize={ 0.02 }
-                bevelOffset={ 0 }
-                bevelSegments={ 5 }
-            >
-                PROJECTS
-            </Text3D>
-        </Float>
+                    position={[-3, -1, -2]}
+                    material={homeMaterial}
+                    font="./fonts/helvetiker_regular.typeface.json"
+                    size={1}
+                    height={ 0.2}
+                    curveSegments={ 12 }
+                    bevelEnabled
+                    bevelThickness={ 0.1 }
+                    bevelSize={ 0.02 }
+                    bevelOffset={ 0 }
+                    bevelSegments={ 5 }
+                    onClick={switchToAbout}
+                    onPointerOver={() => set(true)} 
+                    onPointerOut={() => set(false)}
+                >
+                    ABOUT
+                </Text3D>
+                <Text3D
+                    position={[-3, -4, -2]}
+                    material={homeMaterial}
+                    font="./fonts/helvetiker_regular.typeface.json"
+                    size={1}
+                    height={ 0.2}
+                    curveSegments={ 12 }
+                    bevelEnabled
+                    bevelThickness={ 0.1 }
+                    bevelSize={ 0.02 }
+                    bevelOffset={ 0 }
+                    bevelSegments={ 5 }
+                >
+                    CONTACT
+                </Text3D>
+                <Text3D
+                    position={[2.5, -2.5, -2]}
+                    material={homeMaterial}
+                    font="./fonts/helvetiker_regular.typeface.json"
+                    size={1}
+                    height={ 0.2}
+                    curveSegments={ 12 }
+                    bevelEnabled
+                    bevelThickness={ 0.1 }
+                    bevelSize={ 0.02 }
+                    bevelOffset={ 0 }
+                    bevelSegments={ 5 }
+                >
+                    PROJECTS
+                </Text3D>
+            </Float> */}
+        </group>
     </>
 }

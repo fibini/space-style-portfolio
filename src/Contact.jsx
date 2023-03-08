@@ -18,7 +18,7 @@ export default function Contacts()
     }, [])
 
     return <>
-        <group position={[0, -10, 0]}>
+        <group position={[0, -27, 0]}>
             <Text3D
                 position={[-3, 1.5, 0]}
                 material={contactsMaterial}

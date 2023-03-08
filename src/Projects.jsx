@@ -23,7 +23,7 @@ export default function Projects()
             preset="warehouse"
          />  */}
         {/* <ambientLight /> */}
-        <group position={[0, -8, 0]}>
+        <group position={[0, -18, 0]}>
             <Float>
                 <Text3D
                         position={[-3, 1.5, 0]}

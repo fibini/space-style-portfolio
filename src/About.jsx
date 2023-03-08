@@ -1,4 +1,4 @@
-import { Float, Text, Html, Text3D, useMatcapTexture, useGLTF, MeshReflectorMaterial, TransformControls, PresentationControls, Environment } from "@react-three/drei";
+import { Float, Text, Html, Text3D, useMatcapTexture, useGLTF,Environment } from "@react-three/drei";
 import * as THREE from 'three'
 import { useEffect } from "react";
 import './style.css'
@@ -23,6 +23,7 @@ export default function About()
         
 
     return <>
+        <group position-y={ -9 }>
             <Float floatIntensity={0.5} rotationIntensity={0.5}>
                 <primitive
                     object={ portrait.scene }
@@ -91,8 +92,8 @@ export default function About()
                     color="red"
                 >
                     Hi my name is Fabien, I am a FrontEnd and FullStack developer. I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-                </Text>
-                
+                </Text> 
             </Float>
+        </group>
     </>
 }

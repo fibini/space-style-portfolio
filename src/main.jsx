@@ -16,6 +16,7 @@ root.render(
                 position: [ 0, 2, 8 ]
             } }
         >
+            <color attach="background" args={['#000000']} />
             <ambientLight />
             <Experience />
         </Canvas>
