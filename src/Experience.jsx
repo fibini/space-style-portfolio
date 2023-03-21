@@ -4,7 +4,7 @@ import About from "./About";
 import Homepage from "./Homepage";
 import Projects from "./Projects";
 import Contacts from "./Contact";
-import Galaxy from "./Galaxy";
+import Portal from "./Portal";
 
 export default function Experience()
 {
@@ -12,7 +12,7 @@ export default function Experience()
     return <>
     {/* <OrbitControls /> */}
     <Perf />
-    <Galaxy />
+    <Portal/>
     <ScrollControls pages={4}>
         <Scroll>
             <About />
