@@ -1,4 +1,4 @@
-import { useGLTF, useCursor, Float, Text, Text3D, useMatcapTexture, Html } from "@react-three/drei"
+import { useGLTF, useCursor, Float, Text, Text3D, useMatcapTexture, Html, PresentationControls } from "@react-three/drei"
 import { useState, useEffect } from "react"
 import { useThree } from "@react-three/fiber"
 import * as THREE from 'three'
@@ -44,6 +44,14 @@ export default function Homepage()
 
     return <>
         {/* heading */}
+        <PresentationControls
+            global 
+            rotation={[0.13, 0.1, 0]}
+            polar={[ -0.4, 0.2]}
+            azimuth={[ -0.2, 0.3]}
+            config={{ mass: 2, tension: 400 }}
+            snap={{ mass: 4, tension: 400 }}
+        >
             <group position={[-2, 1, 0]}>
                 <Float>
                     <Text3D
@@ -111,7 +119,7 @@ export default function Homepage()
                         </Html>
                     </primitive>
                     <Text3D
-                            position={[-1.5, -3.5, 0]}
+                            position={[-1.6, -3.5, 0]}
                             rotation={[-0.8, 0.25, 1.8]}
                             material={projectsMaterial}
                             font="./fonts/helvetiker_regular.typeface.json"
@@ -153,7 +161,7 @@ export default function Homepage()
                         position={[6.7, -1.65, 1.2]} 
                     /> 
                     <Text3D
-                        position={[6.9, 0.5, 2]}
+                        position={[7.5, 0.5, 1]}
                         rotation ={[0.1, -0.7, -1.6]}
                         material={aboutMaterial}
                         font="./fonts/helvetiker_regular.typeface.json"
@@ -240,5 +248,6 @@ export default function Homepage()
                     </Text3D>
                 </Float> */}
             </group>
+        </PresentationControls>
     </>
 }
