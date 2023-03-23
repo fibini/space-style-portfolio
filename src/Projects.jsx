@@ -1,4 +1,4 @@
-import { useGLTF, Text3D, useMatcapTexture, Float, Html, Environment } from "@react-three/drei"
+import { useGLTF, Text3D, useMatcapTexture, Float, Html, Environment, Scroll } from "@react-three/drei"
 import { useEffect } from "react"
 import * as THREE from 'three'
 
@@ -23,59 +23,57 @@ export default function Projects()
             preset="warehouse"
          />  */}
         {/* <ambientLight /> */}
-        <group position={[0, -18, 0]}>
-            <Float>
-                <Text3D
-                        position={[-3, 1.5, 0]}
-                        material={projectsMaterial}
-                        font="./fonts/helvetiker_regular.typeface.json"
-                        size={1}
-                        height={ 0.2}
-                        curveSegments={ 12 }
-                        bevelEnabled
-                        bevelThickness={ 0.1 }
-                        bevelSize={ 0.02 }
-                        bevelOffset={ 0 }
-                        bevelSegments={ 5 }
-                >
-                    PROJECTS
-                </Text3D>
+                <Float>
+                    <Text3D
+                            position={[-3, 1.5, 0]}
+                            material={projectsMaterial}
+                            font="./fonts/helvetiker_regular.typeface.json"
+                            size={1}
+                            height={ 0.2}
+                            curveSegments={ 12 }
+                            bevelEnabled
+                            bevelThickness={ 0.1 }
+                            bevelSize={ 0.02 }
+                            bevelOffset={ 0 }
+                            bevelSegments={ 5 }
+                    >
+                        PROJECTS
+                    </Text3D>
 
-                <primitive object={ phone.scene } scale={2} position={[0, -4, 0]} rotation={[-1, 0.25, 0.25]}>
-                    <Html
-                    transform
-                    wrapperClass="portalImg"
-                    distanceFactor={0.5}
-                    position={[0.166, 2.45, 0.08]}
-                    >
-                        <a href='https://portal-scene-eta.vercel.app/'><img src="./portalimg.png" /></a>
-                    </Html>
-                    <Html
-                    transform
-                    wrapperClass="threeDText"
-                    distanceFactor={0.5}
-                    position={[0.166, 1.7, 0.08]}
-                    >
-                        <a href='https://3d-text-six-black.vercel.app/'><img src="./3Dname.png" /></a>
-                    </Html>
-                    <Html
-                    transform
-                    wrapperClass="spotitfy"
-                    distanceFactor={0.5}
-                    position={[0.166, .95, 0.08]}
-                    >
-                        <a href='https://daf98.github.io/Spotify-API/dist/'><img src="./spotitfy.png" /></a>
-                    </Html>
-                    <Html
-                    transform
-                    wrapperClass="gamingConvention"
-                    distanceFactor={0.5}
-                    position={[0.166, 0.2, 0.08]}
-                    >
-                        <a href='https://fibini.github.io/Gaming_Convention/index.html'><img src="./gamingConvention.png" /></a>
-                    </Html>
-                </primitive> 
-            </Float>
-        </group>
+                    <primitive object={ phone.scene } scale={2} position={[0, -4, 0]} rotation={[-1, 0.25, 0.25]}>
+                        <Html
+                        transform
+                        wrapperClass="portalImg"
+                        distanceFactor={0.5}
+                        position={[0.166, 2.45, 0.08]}
+                        >
+                            <a href='https://portal-scene-eta.vercel.app/'><img src="./portalimg.png" /></a>
+                        </Html>
+                        <Html
+                        transform
+                        wrapperClass="threeDText"
+                        distanceFactor={0.5}
+                        position={[0.166, 1.7, 0.08]}
+                        >
+                            <a href='https://3d-text-six-black.vercel.app/'><img src="./3Dname.png" /></a>
+                        </Html>
+                        <Html
+                        transform
+                        wrapperClass="spotitfy"
+                        distanceFactor={0.5}
+                        position={[0.166, .95, 0.08]}
+                        >
+                            <a href='https://daf98.github.io/Spotify-API/dist/'><img src="./spotitfy.png" /></a>
+                        </Html>
+                        <Html
+                        transform
+                        wrapperClass="gamingConvention"
+                        distanceFactor={0.5}
+                        position={[0.166, 0.2, 0.08]}
+                        >
+                            <a href='https://fibini.github.io/Gaming_Convention/index.html'><img src="./gamingConvention.png" /></a>
+                        </Html>
+                    </primitive> 
+                </Float>
     </>
 }

@@ -1,4 +1,3 @@
-import { Scroll, ScrollControls } from "@react-three/drei";
 import { Perf } from "r3f-perf";
 import About from "./About";
 import Homepage from "./Homepage";
@@ -13,13 +12,9 @@ export default function Experience()
     {/* <OrbitControls /> */}
     <Perf />
     <Portal/>
-    <ScrollControls pages={4}>
-        <Scroll>
-            <About />
+            {/* <About /> */}
             <Homepage />
-            <Projects />
-            <Contacts />
-        </Scroll>
-    </ScrollControls>
+            {/* <Projects /> */}
+            {/* <Contacts /> */}
     </>
 }

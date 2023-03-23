@@ -1,4 +1,4 @@
-import { useGLTF, Text3D, useMatcapTexture, Float, Html} from "@react-three/drei"
+import { useGLTF, Text3D, useMatcapTexture, Float, Html, Scroll} from "@react-three/drei"
 import { useEffect } from "react"
 import * as THREE from 'three'
 
@@ -18,24 +18,26 @@ export default function Contacts()
     }, [])
 
     return <>
-        <group position={[0, -27, 0]}>
-            <Text3D
-                position={[-3, 1.5, 0]}
-                material={contactsMaterial}
-                font="./fonts/helvetiker_regular.typeface.json"
-                size={1}
-                height={ 0.2}
-                curveSegments={ 12 }
-                bevelEnabled
-                bevelThickness={ 0.1 }
-                bevelSize={ 0.02 }
-                bevelOffset={ 0 }
-                bevelSegments={ 5 }
-            >
-                CONTACTS
-            </Text3D>
-            <primitive object={linkedIn.scene}>
-            </primitive>
-        </group>
+    <Scroll>
+            <group position={[0, -27, 0]}>
+                <Text3D
+                    position={[-3, 1.5, 0]}
+                    material={contactsMaterial}
+                    font="./fonts/helvetiker_regular.typeface.json"
+                    size={1}
+                    height={ 0.2}
+                    curveSegments={ 12 }
+                    bevelEnabled
+                    bevelThickness={ 0.1 }
+                    bevelSize={ 0.02 }
+                    bevelOffset={ 0 }
+                    bevelSegments={ 5 }
+                >
+                    CONTACTS
+                </Text3D>
+                <primitive object={linkedIn.scene}>
+                </primitive>
+            </group>
+        </Scroll>
     </>
 }
