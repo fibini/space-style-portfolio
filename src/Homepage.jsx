@@ -6,11 +6,13 @@ import * as THREE from 'three'
 const homeMaterial = new THREE.MeshMatcapMaterial()
 const aboutMaterial = new THREE.MeshMatcapMaterial()
 const projectsMaterial = new THREE.MeshMatcapMaterial()
+const contactsMaterial = new THREE.MeshMatcapMaterial()
+
 
 export default function Homepage()
 {
     const phone = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/iphone-x/model.gltf')
-    
+    const linkedIn = useGLTF('./linkedInLogo/scene.gltf')
     const portrait = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
     const ruby = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/ruby/model.gltf')
     const reactLogo = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/react-logo/model.gltf')
@@ -27,6 +29,8 @@ export default function Homepage()
         homeMaterial.needsUpdate = true
         projectsMaterial.matcap = matcapTexture
         projectsMaterial.needsUpdate = true
+        contactsMaterial.matcap = matcapTexture
+        contactsMaterial.needsUpdate = true
     }, [])
 
     const { camera } = useThree()
@@ -182,6 +186,28 @@ export default function Homepage()
                     >
                         ABOUT
                     </Text3D>
+                    <Text3D
+                    position={[3, -2.7, 1.2]}
+                    rotation-y={-0.5}
+                    material={contactsMaterial}
+                    font="./fonts/helvetiker_regular.typeface.json"
+                    size={0.4}
+                    height={ 0.1}
+                    curveSegments={ 12 }
+                    bevelEnabled
+                    bevelThickness={ 0.1 }
+                    bevelSize={ 0.02 }
+                    bevelOffset={ 0 }
+                    bevelSegments={ 5 }
+                    >
+                    CONTACTS
+                    </Text3D>
+                    <primitive
+                        object={linkedIn.scene}
+                        scale={0.5}
+                        position={[4.6, -3.5, 2]}
+                        rotation-y={-0.5} 
+                    />
                     <Text
                     position={[4.7, -1.51, 0.3]}
                     fontSize={0.2}

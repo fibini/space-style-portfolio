@@ -1,0 +1,11 @@
+Model Information:
+* title:	Linkedin Logo
+* source:	https://sketchfab.com/3d-models/linkedin-logo-b384da257fba4a6491393a8d887b1961
+* author:	timtime3d (https://sketchfab.com/timislav)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Linkedin Logo" (https://sketchfab.com/3d-models/linkedin-logo-b384da257fba4a6491393a8d887b1961) by timtime3d (https://sketchfab.com/timislav) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
