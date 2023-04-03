@@ -17,7 +17,6 @@ root.render(
             } }
         >
             <color attach="background" args={['#000000']} />
-            <ambientLight />
             <Experience />
         </Canvas>
     </StrictMode>

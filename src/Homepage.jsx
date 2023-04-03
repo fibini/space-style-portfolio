@@ -14,6 +14,7 @@ export default function Homepage()
     const portrait = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
     const ruby = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/ruby/model.gltf')
     const reactLogo = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/react-logo/model.gltf')
+    const threejsLogo = useGLTF('./threejsLogo/scene.gltf')
     const [matcapTexture] = useMatcapTexture('1A2461_3D70DB_2C3C8F_2C6CAC', 256)
 
     useEffect(() =>
@@ -47,13 +48,13 @@ export default function Homepage()
         <PresentationControls
             global 
             rotation={[0.13, 0.1, 0]}
-            polar={[ -0.4, 0.2]}
+            polar={[ -0.2, 0.2]}
             azimuth={[ -0.2, 0.3]}
             config={{ mass: 2, tension: 400 }}
             snap={{ mass: 4, tension: 400 }}
         >
             <group position={[-2, 1, 0]}>
-                <Float>
+                <Float floatIntensity={0.5}>
                     <Text3D
                         position={[-3, 1.5, -2]}
                         material={homeMaterial}
@@ -153,12 +154,17 @@ export default function Homepage()
                     <primitive
                         object={ruby.scene}
                         scale={.1}
-                        position={[4.6, -1.38, 0.3]} 
+                        position={[4.6, -1.45, 0.1]} 
                     />
                     <primitive
                         object={reactLogo.scene}
                         scale={.1}
                         position={[6.7, -1.65, 1.2]} 
+                    /> 
+                     <primitive
+                        object={threejsLogo.scene}
+                        scale={.002}
+                        position={[5.5, -1.45, 0.6]} 
                     /> 
                     <Text3D
                         position={[7.5, 0.5, 1]}
@@ -177,7 +183,7 @@ export default function Homepage()
                         ABOUT
                     </Text3D>
                     <Text
-                    position={[4.7, -1.48, 0.5]}
+                    position={[4.7, -1.51, 0.3]}
                     fontSize={0.2}
                     rotation-x={-1.4}
                     rotation-z={0.25}
@@ -193,6 +199,15 @@ export default function Homepage()
                     color="purple"
                     >
                         REACT
+                    </Text>
+                    <Text
+                    position={[5.6, -1.58, 0.8]}
+                    fontSize={0.2}
+                    rotation-x={-1.4}
+                    rotation-z={0.25}
+                    color="blue"
+                    >
+                        ThreeJS
                     </Text>
                 </Float>
 

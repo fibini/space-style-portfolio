@@ -10,6 +10,7 @@ export default function Experience()
 
     return <>
     {/* <OrbitControls /> */}
+    <ambientLight />
     <Perf />
     <Portal/>
             {/* <About /> */}
