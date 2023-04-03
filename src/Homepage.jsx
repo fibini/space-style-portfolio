@@ -33,17 +33,6 @@ export default function Homepage()
         contactsMaterial.needsUpdate = true
     }, [])
 
-    const { camera } = useThree()
-    const switchToProjects = () =>
-    {
-        camera.position.set(40, 0, 40)
-    }
-
-    const switchToAbout = () =>
-    {
-        camera.position.set(0, -9, 8)
-    }
-
     const [hovered, set] = useState()
     useCursor(hovered)
 

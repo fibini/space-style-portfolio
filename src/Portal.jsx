@@ -1,4 +1,4 @@
-import { Sparkles } from "@react-three/drei"
+import { Stars } from "@react-three/drei"
 
 export default function Portal()
 {
@@ -7,9 +7,6 @@ export default function Portal()
         <sphereGeometry />
         <meshStandardMaterial />
     </mesh>
-    <Sparkles 
-        size={ 8 }
-        scale={[20, 10, 5]}
-    />
+    <Stars radius={100} depth={30} count={5000} factor={4} saturation={0} fade speed={0.5} />
     </>
 }
