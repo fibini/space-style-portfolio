@@ -33,6 +33,7 @@ export default function Homepage()
         contactsMaterial.needsUpdate = true
     }, [])
 
+    const click = ()=>'https://www.linkedin.com/in/fabien-brathwaite-91150822a/'
     const [hovered, set] = useState()
     useCursor(hovered)
 
@@ -196,6 +197,7 @@ export default function Homepage()
                         scale={0.5}
                         position={[4.6, -3.5, 2]}
                         rotation-y={-0.5} 
+                        onClick={click}
                     />
                     <Text
                     position={[4.7, -1.51, 0.3]}
