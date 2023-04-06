@@ -1,0 +1,11 @@
+Model Information:
+* title:	Astronaut character stylized rigged free model
+* source:	https://sketchfab.com/3d-models/astronaut-character-stylized-rigged-free-model-c8daa753952e454eb3c6195446751e88
+* author:	Muko_Art (https://sketchfab.com/Muko_Art)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Astronaut character stylized rigged free model" (https://sketchfab.com/3d-models/astronaut-character-stylized-rigged-free-model-c8daa753952e454eb3c6195446751e88) by Muko_Art (https://sketchfab.com/Muko_Art) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

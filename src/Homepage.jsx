@@ -39,6 +39,7 @@ export default function Homepage()
 
     return <>
         {/* heading */}
+        
         <PresentationControls
             global 
             rotation={[0.13, 0.1, 0]}
