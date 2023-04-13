@@ -13,7 +13,7 @@ export default function Experience()
     {/* <OrbitControls /> */}
     <ambientLight />
     <Perf />
-    <Portal/>
+            <Portal/>
             <Homepage />
             {/* <Projects /> */}
             {/* <Contacts /> */}
