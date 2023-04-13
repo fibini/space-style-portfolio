@@ -9,7 +9,7 @@ export default function Experience()
 
     return <>
             <ambientLight />
-            <Perf />
+            {/* <Perf /> */}
             <Portal/>
             <Homepage />
             <Text
