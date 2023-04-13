@@ -1,6 +1,5 @@
 import { useGLTF, useCursor, Float, Text, Text3D, useMatcapTexture, Html, PresentationControls } from "@react-three/drei"
 import { useState, useEffect } from "react"
-import { useThree } from "@react-three/fiber"
 import * as THREE from 'three'
 
 const homeMaterial = new THREE.MeshMatcapMaterial()
@@ -11,8 +10,9 @@ const contactsMaterial = new THREE.MeshMatcapMaterial()
 
 export default function Homepage()
 {
+    const spaceship = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/low-poly-spaceship/model.gltf')
     const phone = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/iphone-x/model.gltf')
-    const linkedIn = useGLTF('./linkedInLogo/scene.gltf')
+    // const linkedIn = useGLTF('./linkedInLogo/scene.gltf')
     const portrait = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
     const ruby = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/ruby/model.gltf')
     const reactLogo = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/react-logo/model.gltf')
@@ -33,7 +33,6 @@ export default function Homepage()
         contactsMaterial.needsUpdate = true
     }, [])
 
-    const click = ()=>'https://www.linkedin.com/in/fabien-brathwaite-91150822a/'
     const [hovered, set] = useState()
     useCursor(hovered)
 
@@ -191,15 +190,15 @@ export default function Homepage()
                     bevelOffset={ 0 }
                     bevelSegments={ 5 }
                     >
+                        <Html
+                        distanceFactor={0.5}
+                        position={[1, 0.2, 1]}
+                        >
+                            <a href="https://www.linkedin.com/in/fabien-brathwaite-91150822a/"><img src="./linkedinlogo.png" /></a>
+                        </Html>
                     CONTACTS
                     </Text3D>
-                    <primitive
-                        object={linkedIn.scene}
-                        scale={0.5}
-                        position={[4.6, -3.5, 2]}
-                        rotation-y={-0.5} 
-                        onClick={click}
-                    />
+                    
                     <Text
                     position={[4.7, -1.51, 0.3]}
                     fontSize={0.2}
@@ -227,6 +226,18 @@ export default function Homepage()
                     >
                         ThreeJS
                     </Text>
+                </Float>
+                <Float
+                    floatIntensity={2}
+                    floatingRange={[-2, 1]}
+                    speed={0.5}
+                >
+                    <primitive
+                        object={spaceship.scene}
+                        scale={0.5}
+                        position={[-5, 0, 0]}
+                        rotation={[0.1, 0.5, 0]}
+                    />
                 </Float>
 
                 {/* navigation */}
