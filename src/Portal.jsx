@@ -8,7 +8,7 @@ export default function Portal()
 {
     const moon = useRef()
 
-    const moonTexture = useLoader(TextureLoader, '/src/assets/moon.jpg')
+    const moonTexture = useLoader(TextureLoader, './moon.jpg')
 
     useFrame(() =>
     {
