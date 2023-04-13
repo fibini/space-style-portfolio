@@ -237,7 +237,15 @@ export default function Homepage()
                         scale={0.5}
                         position={[-5, 0, 0]}
                         rotation={[0.1, 0.5, 0]}
-                    />
+                    >
+                        <Html
+                            position={[-0.5, -4, 0]}
+                            wrapperClass="shiptext"
+                            center
+                        >
+                        Hi my name is Fabien, I am a Full-Stack developer. I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                        </Html>
+                    </primitive>
                 </Float>
 
                 {/* navigation */}

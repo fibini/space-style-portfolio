@@ -47,3 +47,10 @@ canvas
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
 }
+
+.shiptext
+{
+    color: white;
+    width: 20rem;
+    font-size: 20px;
+}
