@@ -18,6 +18,7 @@ root.render(
                 position: [ 0, 2, 9 ]
             } }
         >
+            
             <color attach="background" args={['#000000']} />
             <Suspense fallback={null}>
                 <Experience />

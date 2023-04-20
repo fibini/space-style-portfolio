@@ -86,7 +86,7 @@ export default function Homepage()
                         distanceFactor={0.5}
                         position={[0.166, 2.45, 0.08]}
                         >
-                            <a href='https://portal-scene-eta.vercel.app/'><img src="./portalimg.png" /></a>
+                            <a href='https://portal-scene-eta.vercel.app/' target="_blank"><img src="./portalimg.png" /></a>
                         </Html>
                         <Html
                         transform
@@ -94,7 +94,7 @@ export default function Homepage()
                         distanceFactor={0.5}
                         position={[0.166, 1.7, 0.08]}
                         >
-                            <a href='https://3d-text-six-black.vercel.app/'><img src="./3Dname.png" /></a>
+                            <a href='https://3d-text-six-black.vercel.app/' target="_blank"><img src="./3Dname.png" /></a>
                         </Html>
                         <Html
                         transform
@@ -102,7 +102,7 @@ export default function Homepage()
                         distanceFactor={0.5}
                         position={[0.166, .95, 0.08]}
                         >
-                            <a href='https://daf98.github.io/Spotify-API/dist/'><img src="./spotitfy.png" /></a>
+                            <a href='https://daf98.github.io/Spotify-API/dist/' target="_blank"><img src="./spotitfy.png" /></a>
                         </Html>
                         <Html
                         transform
@@ -110,7 +110,7 @@ export default function Homepage()
                         distanceFactor={0.5}
                         position={[0.166, 0.2, 0.08]}
                         >
-                            <a href='https://fibini.github.io/Gaming_Convention/index.html'><img src="./gamingConvention.png" /></a>
+                            <a href='https://fibini.github.io/Gaming_Convention/index.html' target="_blank"><img src="./gamingConvention.png" /></a>
                         </Html>
                     </primitive>
                     <Text3D
@@ -142,7 +142,7 @@ export default function Homepage()
                                 position={[0, 1.55, -1.39]}
                                 rotation-x={-0.26}
                             >
-                                <a href="https://github.com/fibini"><img  src="./github-pic.png" /></a>
+                                <a href="https://github.com/fibini" target="_blank"><img  src="./github-pic.png" /></a>
                             </Html>
                     </primitive>
                     <primitive
@@ -194,7 +194,7 @@ export default function Homepage()
                         distanceFactor={0.5}
                         position={[1, 0.2, 1]}
                         >
-                            <a href="https://www.linkedin.com/in/fabien-brathwaite-91150822a/"><img src="./linkedinlogo.png" /></a>
+                            <a href="https://www.linkedin.com/in/fabien-brathwaite-91150822a/" target="_blank"><img src="./linkedinlogo.png" /></a>
                         </Html>
                     CONTACTS
                     </Text3D>
@@ -239,7 +239,7 @@ export default function Homepage()
                         rotation={[0.1, 0.5, 0]}
                     >
                         <Html
-                            position={[-0.5, -4, 0]}
+                            position={[-0.3, -5, 0]}
                             wrapperClass="shiptext"
                             center
                         >
@@ -247,58 +247,6 @@ export default function Homepage()
                         </Html>
                     </primitive>
                 </Float>
-
-                {/* navigation */}
-                {/* <Float>
-                <Text3D
-                        position={[-3, -1, -2]}
-                        material={homeMaterial}
-                        font="./fonts/helvetiker_regular.typeface.json"
-                        size={1}
-                        height={ 0.2}
-                        curveSegments={ 12 }
-                        bevelEnabled
-                        bevelThickness={ 0.1 }
-                        bevelSize={ 0.02 }
-                        bevelOffset={ 0 }
-                        bevelSegments={ 5 }
-                        onClick={switchToAbout}
-                        onPointerOver={() => set(true)} 
-                        onPointerOut={() => set(false)}
-                    >
-                        ABOUT
-                    </Text3D>
-                    <Text3D
-                        position={[-3, -4, -2]}
-                        material={homeMaterial}
-                        font="./fonts/helvetiker_regular.typeface.json"
-                        size={1}
-                        height={ 0.2}
-                        curveSegments={ 12 }
-                        bevelEnabled
-                        bevelThickness={ 0.1 }
-                        bevelSize={ 0.02 }
-                        bevelOffset={ 0 }
-                        bevelSegments={ 5 }
-                    >
-                        CONTACT
-                    </Text3D>
-                    <Text3D
-                        position={[2.5, -2.5, -2]}
-                        material={homeMaterial}
-                        font="./fonts/helvetiker_regular.typeface.json"
-                        size={1}
-                        height={ 0.2}
-                        curveSegments={ 12 }
-                        bevelEnabled
-                        bevelThickness={ 0.1 }
-                        bevelSize={ 0.02 }
-                        bevelOffset={ 0 }
-                        bevelSegments={ 5 }
-                    >
-                        PROJECTS
-                    </Text3D>
-                </Float> */}
             </group>
         </PresentationControls>
     </>

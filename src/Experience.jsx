@@ -1,7 +1,7 @@
 import { Perf } from "r3f-perf";
 import Homepage from "./Homepage";
 import Portal from "./Portal";
-import { Text } from "@react-three/drei";
+import { Text} from "@react-three/drei";
 
 
 export default function Experience()
