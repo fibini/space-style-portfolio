@@ -12,7 +12,7 @@ export default function Homepage()
 {
     const spaceship = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/low-poly-spaceship/model.gltf')
     const phone = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/iphone-x/model.gltf')
-    // const linkedIn = useGLTF('./linkedInLogo/scene.gltf')
+    const satellite = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/solar-panel/model.gltf')
     const portrait = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
     const ruby = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/ruby/model.gltf')
     const reactLogo = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/react-logo/model.gltf')
@@ -190,15 +190,22 @@ export default function Homepage()
                     bevelOffset={ 0 }
                     bevelSegments={ 5 }
                     >
+                    CONTACTS
+                    </Text3D>
+                    <primitive
+                        object={satellite.scene}
+                        scale={0.4}
+                        position={[4, -6, -1]}
+                        rotation-y ={-1}  
+                    >
                         <Html
-                        distanceFactor={0.5}
-                        position={[1, -0.8, -0.5]}
+                            transform
+                            distanceFactor={0.5}
+                            rotation-x={-1}
                         >
                             <a href="https://www.linkedin.com/in/fabien-brathwaite-91150822a/" target="_blank"><img src="./linkedinlogo.png" /></a>
                         </Html>
-                    CONTACTS
-                    </Text3D>
-                    
+                        </primitive>
                     <Text
                     position={[4.7, -1.51, 0.3]}
                     fontSize={0.2}
