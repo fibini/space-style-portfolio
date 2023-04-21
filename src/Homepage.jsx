@@ -192,7 +192,7 @@ export default function Homepage()
                     >
                         <Html
                         distanceFactor={0.5}
-                        position={[1, -0.5, 0.2]}
+                        position={[1, -0.8, -0.5]}
                         >
                             <a href="https://www.linkedin.com/in/fabien-brathwaite-91150822a/" target="_blank"><img src="./linkedinlogo.png" /></a>
                         </Html>
